@@ -1,4 +1,5 @@
 // import { initTestGame } from '../games/test_game.js';
+import { initCalculatorGame } from '../games/сalculator';
 export const games = [
   {
     // init: initTestGame,
@@ -17,6 +18,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: initCalculatorGame,
     id: 4,
     name: 'Калькулятор',
     category: 'numerical',
