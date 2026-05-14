@@ -5,3 +5,8 @@ body {
   color: var(--colorTextPrimary);
   line-height: 1.25;
 }
+.container {
+  max-width: 1120px;
+  padding: 0px 15px;
+  margin-inline: auto;
+}
