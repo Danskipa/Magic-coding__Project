@@ -9,3 +9,7 @@ body {
   color: var(--colorTextPrimaryDark);
   background-color: var(--colorBgPrimaryDark);
 }
+.logo__img--dark {
+  fill: var(--colorTextPrimaryDark);
+  background-color: aliceblue;
+}

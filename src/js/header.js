@@ -8,6 +8,7 @@ const handleSwitcher = event => {
     logoPickture.classList.add('logo__img--dark');
   } else {
     document.body.classList.remove('dark');
+    logoPickture.classList.remove('logo__img--dark');
   }
 };
 
