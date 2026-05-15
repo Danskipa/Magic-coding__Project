@@ -1,6 +1,5 @@
 // import { initTestGame } from '../games/test_game.js';
 import { initCalculatorGame } from '../games/сalculator';
-import { initTimeCalculatorGame } from '../games/time_calculator.js';
 export const games = [
   {
     // init: initTestGame,
