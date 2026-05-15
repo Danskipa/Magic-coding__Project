@@ -5,3 +5,7 @@ body {
   color: var(--colorTextPrimary);
   line-height: 1.25;
 }
+.dark {
+  color: var(--colorTextPrimaryDark);
+  background-color: var(--colorBgPrimaryDark);
+}

@@ -13,4 +13,16 @@
 
   --colorTextPrimary: #000000;
   --colorTextSecondary: #7e7e7e;
+  /* dark theme */
+  --colorCorrectDark: #ff0086;
+  --colorIncorrectDark: #00ff48;
+
+  --colorBgPrimaryDark: #000000;
+  --colorBgSecondaryDark: #595959;
+  --colorBgFieldDark: #565656;
+  --colorBgSwitchDark: #fafafa;
+  --colorBgChooseDark: #727272;
+
+  --colorTextPrimaryDark: #ffffff;
+  --colorTextSecondaryDark: #fdfdfd;
 }
