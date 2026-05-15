@@ -1,0 +1,68 @@
+.game-id_4 {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+  padding-bottom: 36px;
+}
+.game-id_4::before {
+  content: '';
+  display: block;
+  width: 536px;
+  height: 1px;
+  /* border: 1px solid var(--colorTextPrimary); */
+  background-color: var(--colorTextPrimary);
+}
+.calculator__game {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.number {
+  background-color: var(--colorBgField);
+  width: 135px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  color: var(--colorTextSecondary);
+}
+.result {
+  background-color: var(--colorBgField);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--colorTextSecondary);
+  text-align: center;
+  min-width: 118px;
+  max-width: 200px;
+}
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculator__actions {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 62px;
+  gap: 10px;
+  justify-content: center;
+}
+.action,
+.calculate {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: var(--colorTextPrimary);
+  color: var(--colorBgPrimary);
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+.action:hover,
+.calculate:hover {
+  background-color: var(--colorBgSwitch);
+}
+.action.choose {
+  background-color: var(--colorBgSwitch);
+}
