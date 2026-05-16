@@ -21,16 +21,6 @@
   position: relative;
 }
 
-.guess-box::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 536px;
-  height: 1px;
-  background-color: #000000;
-  transform: translateX(-50%);
-}
 .guess-input-wrapper {
   position: relative;
   display: inline-block;
