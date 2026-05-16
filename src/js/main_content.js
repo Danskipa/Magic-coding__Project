@@ -23,4 +23,4 @@ const renderGames = (games, container) => {
 };
 renderGames(games, gamesContainer);
 
-import './header.js';
+
