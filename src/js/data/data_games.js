@@ -1,5 +1,7 @@
 // import { initTestGame } from '../games/test_game.js';
-import { initCalculatorGame } from '../games/сalculator';
+import { initCalculatorGame } from '../games/calculator.js';
+import { initTimeCalculatorGame } from '../games/time_calculator.js';
+
 
 export const games = [
   {
@@ -25,6 +27,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initTimeCalculatorGame,
     id: 5,
     name: 'Калькулятор часу',
     category: 'numerical',

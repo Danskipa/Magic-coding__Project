@@ -1,17 +1,86 @@
-.time-сalculator__title{
-    font-size: 16px;
-    color: var(--colorTextPrimary);
+.game-id_5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 36px;
 }
-.time-calculator__input-container{
+.game-id_5::before {
+  content: '';
+  display: block;
+  background-color: var(--colorTextPrimary);
+  height: 1px;
+  width: 536px;
+}
+.time-calculator__game {
+  display: flex;
+  align-items: center;
+  margin-right: 46px;
+}
+
+.time-сalculator__title {
+  font-size: 16px;
+  color: var(--colorTextPrimary);
+}
+.time-calculator__input-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--colorBgField);
   border-radius: 20px;
   padding: 10px 45px 10px 10px;
   width: 150px;
   height: 35px;
-  background-color: var(--colorBgField);
+  margin-right: 166px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: transform 250ms ease;
 }
-.time-calculator__input{
+.time-calculator__input-container:focus-within {
+  transform: scale(1.05);
+}
+.time-calculator__input {
   color: var(--colorTextSecondary);
 }
-.time-calculator__result{
-
+.time-calculator__input::-webkit-inner-spin-button,
+.time-calculator__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.time-calculator__button {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-color: var(--colorTextPrimary);
+  background-image: url('../../images/magnifyier.svg');
+  filter: var(--colorBgPrimary);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 20px 20px 0;
+  transition: background-color 0.3s ease;
+}
+.time-calculator__button:hover {
+  background-color: var(--colorBgSwitch);
+}
+.time-calculator__result {
+  width: 100px;
+  position: relative;
+}
+.time-calculator__result::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 112px;
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    black 0 2px,
+    transparent 2px 4px
+  );
+  margin-right: 20px;
 }
