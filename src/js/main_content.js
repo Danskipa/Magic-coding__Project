@@ -22,3 +22,5 @@ const renderGames = (games, container) => {
   });
 };
 renderGames(games, gamesContainer);
+
+
