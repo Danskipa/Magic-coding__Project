@@ -1,4 +1,5 @@
 // import { initTestGame } from '../games/test_game.js';
+import { initGuessNumberGame } from '../games/guess-number.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
 
@@ -11,6 +12,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initGuessNumberGame,
     id: 2,
     name: 'Вгадай число',
     category: 'numerical',
