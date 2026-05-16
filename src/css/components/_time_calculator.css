@@ -40,6 +40,7 @@
 }
 .time-calculator__input {
   color: var(--colorTextSecondary);
+  max-width: 100px;
 }
 .time-calculator__input::-webkit-inner-spin-button,
 .time-calculator__input::-webkit-outer-spin-button {
