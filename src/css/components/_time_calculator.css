@@ -1,0 +1,17 @@
+.time-сalculator__title{
+    font-size: 16px;
+    color: var(--colorTextPrimary);
+}
+.time-calculator__input-container{
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  width: 150px;
+  height: 35px;
+  background-color: var(--colorBgField);
+}
+.time-calculator__input{
+  color: var(--colorTextSecondary);
+}
+.time-calculator__result{
+
+}

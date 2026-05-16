@@ -1,5 +1,6 @@
 // import { initTestGame } from '../games/test_game.js';
 import { initCalculatorGame } from '../games/сalculator';
+
 export const games = [
   {
     // init: initTestGame,
