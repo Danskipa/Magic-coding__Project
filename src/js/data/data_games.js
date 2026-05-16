@@ -1,4 +1,5 @@
 // import { initTestGame } from '../games/test_game.js';
+import { initGuessNumberGame } from '../games/guess-number.js';
 export const games = [
   {
     // init: initTestGame,
@@ -7,6 +8,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initGuessNumberGame,
     id: 2,
     name: 'Вгадай число',
     category: 'numerical',
