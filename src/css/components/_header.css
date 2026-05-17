@@ -1,49 +1,124 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-button,
-address {
-  margin: 0;
-  padding: 0;
+/* modal */
+.modal.hidden {
+  display: none;
 }
-a,
-button {
-  background-color: inherit;
-  text-decoration-line: none;
-  text-decoration: none;
-  color: inherit;
-  cursor: context-menu;
-  display: inline-block;
+
+.modal {
+  background-color: var(--colorBgPrimary);
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-a {
-  text-decoration-line: none;
-  text-decoration: none;
-  color: inherit;
+
+.modal__all {
+  background-color: var(--colorBgPrimary);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 400px;
+  position: relative;
 }
-button,
-input {
-  appearance: none;
-  background-color: inherit;
-  border: 0;
-  outline: 0;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
+.close__button {
+  width: 15px;
+  height: 15px;
+  background-color: var(--colorBgPrimary);
+  background-image: url(../../images/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  right: -50px;
+  top: -15px;
+  z-index: 70;
+  transition: transform, 500ms, ease-in-out;
 }
-ul,
-ol {
-  list-style: none;
+.close__button:active {
+  transform: translateY(10px);
 }
-img {
-  display: block;
-  width: 100%;
-  height: auto;
+.modal__list {
+  width: 400px;
+  position: relative;
+}
+.modal__photo {
+  width: 30px;
+  height: 30px;
+  background-color: var(--colorBgPrimary);
+  background-image: url(../../images/sword.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+}
+.modal__photo--one {
+  left: -35px;
+  top: 120px;
+  z-index: 70;
+}
+.modal__photo--two {
+  background-image: url(../../images/puzzle.svg);
+  left: -10px;
+  top: 220px;
+  z-index: 70;
+}
+.modal__photo--three {
+  background-image: url(../../images/tic-tac-toe.svg);
+  right: -10px;
+  top: 220px;
+  z-index: 70;
+}
+.modal__photo--four {
+  background-image: url(../../images/play_station.svg);
+  top: 120px;
+  right: -35px;
+  z-index: 70;
+}
+
+.modal__text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.form__input {
+  border-radius: 20px;
+  padding: 10px 90px 10px 10px;
+  background-color: var(--colorBgField);
+}
+.form__button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--colorBgPrimary);
+  background-color: var(--colorTextPrimary);
+}
+
+.seconde__modal {
+  background-color: var(--colorBgPrimary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 51;
+  position: fixed;
+  inset: 0;
+}
+.modal__list--seconse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seconde__modal.hidden {
+  display: none;
 }
 /* header */
 .header__container {
@@ -57,16 +132,16 @@ img {
 }
 .logo__link--picture {
   padding-right: 10px;
+  width: 55px;
+  height: 40px;
+  padding-left: 10px;
 }
 .logo__link {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-.logo__photo {
-  width: 40px;
-  padding-left: 10px;
-}
+
 .logo__link--part {
   font-family: var(--fontLogo);
 }
