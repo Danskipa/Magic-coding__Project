@@ -11,9 +11,9 @@ const renderGames = (games, container) => {
           </div>
         </div>
       </section>`;
-    acc.push(gameHTML);
+    acc += gameHTML;
     return acc;
-  }, []);
+  }, '');
   container.innerHTML = html;
   games.forEach(game => {
     if (game.init) {
@@ -22,3 +22,5 @@ const renderGames = (games, container) => {
   });
 };
 renderGames(games, gamesContainer);
+
+
