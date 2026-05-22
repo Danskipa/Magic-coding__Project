@@ -17,17 +17,43 @@
       </ul>
     </div>
     <div class="footer-subscribe">
-      <div class="footer-form">
+      <form class="footer-form">
         <input
           placeholder="Ваша ел. адреса..."
           type="text"
           class="footer-input"
         />
-        <button class="footer-button">Підписатись</button>
-      </div>
+        <button class="footer-button" data-modal-open>Підписатись</button>
+      </form>
       <p class="footer-text">
         *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
       </p>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn__close" data-modal-close>
+          <a href="#" class="form__close">
+            <svg class="form__icon">
+              <use href="./images/icon-close.svg" />
+            </svg>
+          </a>
+        </button>
+        <h2 class="modal-title">Дякую за підписку!</h2>
+        <ul class="modal-list">
+          <li class="modal-item">
+            <div class="modalphoto modalphoto-one"></div>
+          </li>
+          <li class="modal-item">
+            <div class="modalphoto modalphoto-two"></div>
+          </li>
+          <li class="modal-item">
+            <div class="modalphoto modalphoto-three"></div>
+          </li>
+          <li class="modal-item">
+            <div class="modalphoto modalphoto-four"></div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
