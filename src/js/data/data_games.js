@@ -2,6 +2,7 @@
 import { initGuessNumberGame } from '../games/guess-number.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
+import { initDinosaurGame } from '../games/dinosaur-game.js';
 import { initLeapYearGame } from '../games/leap_year.js';
 
 import { initBiggestNummber } from '../games/biggest_num.js';
@@ -37,6 +38,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initDinosaurGame,
     id: 6,
     name: 'Google динозаврик',
     category: 'game',
