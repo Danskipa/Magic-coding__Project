@@ -2,15 +2,16 @@
 import { initGuessNumberGame } from '../games/guess-number.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
+import { initLeapYearGame } from '../games/leap_year.js';
 
 
 export const games = [
-  {
-    // init: initTestGame,
+ {
+    init: initLeapYearGame,
     id: 1,
-    name: 'Високосний калькулятор',
-    category: 'numerical',
-  },
+    name: "Високосний калькулятор",
+    category: "numerical",
+  },,
   {
     init: initGuessNumberGame,
     id: 2,
