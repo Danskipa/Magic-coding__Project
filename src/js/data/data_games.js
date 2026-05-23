@@ -4,6 +4,7 @@ import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
 import { initLeapYearGame } from '../games/leap_year.js';
 
+import { initBiggestNummber } from '../games/biggest_num.js';
 
 export const games = [
  {
@@ -46,6 +47,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: initBiggestNummber,
     id: 8,
     name: 'Найбільше число',
     category: 'numerical',
