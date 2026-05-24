@@ -1,0 +1,36 @@
+.leap-year-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.leap-year-title {
+  font-family: var(--fontPrimary);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 36px;
+  margin-top: 36px;
+  color: var(--colorTextPrimary);
+}
+
+.leap-year-input {
+  max-width: 150px;
+  padding: 10px;
+  font-size: 12px;
+  font-family: var(--fontPrimary);
+  border-radius: 20px;
+  border: none;
+  background-color: var(--colorBgField);
+  color: var(--colorTextSecondary);
+  box-shadow: 3px 3px 0 var(--colorBgSecondary);
+  margin-bottom: 20px;
+}
+
+.leap-year-result {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: var(--fontPrimary);
+  color: var(--colorCorrect);
+}

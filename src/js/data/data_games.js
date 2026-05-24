@@ -2,16 +2,19 @@
 import { initGuessNumberGame } from '../games/guess-number.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
+import { initDinosaurGame } from '../games/dinosaur-game.js';
+import { initLeapYearGame } from '../games/leap_year.js';
 import { initFootball } from '../games/football.js';
 
+import { initBiggestNummber } from '../games/biggest_num.js';
 
 export const games = [
-  {
-    // init: initTestGame,
+ {
+    init: initLeapYearGame,
     id: 1,
-    name: 'Високосний калькулятор',
-    category: 'numerical',
-  },
+    name: "Високосний калькулятор",
+    category: "numerical",
+  },,
   {
     init: initGuessNumberGame,
     id: 2,
@@ -36,6 +39,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initDinosaurGame,
     id: 6,
     name: 'Google динозаврик',
     category: 'game',
@@ -47,6 +51,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: initBiggestNummber,
     id: 8,
     name: 'Найбільше число',
     category: 'numerical',
