@@ -10,10 +10,18 @@ ol,
 textarea {
   padding: 0;
   margin: 0;
+  font-weight: inherit;
 }
 ul,
+ul::marker,
 ol {
   list-style: none;
+  unicode-bidi: none;
+  font-variant-numeric: none;
+  text-transform: none;
+  text-indent: 0px;
+  text-align: none;
+  text-align-last: none;
 }
 a {
   text-decoration: none;
@@ -37,4 +45,9 @@ input {
   background-color: transparent;
   outline: none;
   appearance: none;
+}
+img,
+use {
+  width: 100%;
+  display: block;
 }
