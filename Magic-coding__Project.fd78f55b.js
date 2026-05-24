@@ -16,7 +16,7 @@ let e=document.querySelector(".modal"),t=document.querySelector(".switcher");doc
         </div>
       </div>
     </section>
-  `;let t=e.querySelector(".guess-input"),u=e.querySelector(".guess-subtitle"),a=Math.floor(100*Math.random())+1;t.addEventListener("input",e=>{let t=Number(e.target.value);t===a?u.textContent=`\u{412}\u{456}\u{442}\u{430}\u{44E}, \u{432}\u{438} \u{432}\u{433}\u{430}\u{434}\u{430}\u{43B}\u{438} \u{447}\u{438}\u{441}\u{43B}\u{43E}! (${a})`:t>a?u.textContent="Занадто велике число":u.textContent="Занадто мале число"})});let r=[{init:()=>{let e=document.querySelector(".game-id_1");if(!e)return;e.innerHTML=`
+  `;let t=e.querySelector(".guess-input"),u=e.querySelector(".guess-subtitle"),a=Math.floor(100*Math.random())+1;t.addEventListener("input",e=>{let t=Number(e.target.value);t===a?u.textContent=`\u{412}\u{456}\u{442}\u{430}\u{44E}, \u{432}\u{438} \u{432}\u{433}\u{430}\u{434}\u{430}\u{43B}\u{438} \u{447}\u{438}\u{441}\u{43B}\u{43E}! (${a})`:t>a?u.textContent="Занадто велике число":u.textContent="Занадто мале число"})});let o=[{init:()=>{let e=document.querySelector(".game-id_1");if(!e)return;e.innerHTML=`
     <section class="leap-year-game">
       <h2 class="leap-year-title">\u{41F}\u{435}\u{440}\u{435}\u{432}\u{456}\u{440} \u{432} \u{44F}\u{43A}\u{438}\u{439} \u{440}\u{456}\u{43A} \u{442}\u{438} \u{43D}\u{430}\u{440}\u{43E}\u{434}\u{438}\u{432}\u{441}\u{44F}</h2>
       <div class="leap-year-box">
@@ -92,11 +92,11 @@ let e=document.querySelector(".modal"),t=document.querySelector(".switcher");doc
         </label>
       </li>
     </ul>
-<p class="biggest-num__text">\u{41D}\u{430}\u{439}\u{431}\u{456}\u{43B}\u{44C}\u{448}\u{435} \u{447}\u{438}\u{441}\u{43B}\u{43E}, \u{44F}\u{43A}\u{435} \u{432}\u{438} \u{432}\u{432}\u{435}\u{43B}\u{438} - (<span class="biggest-num__text--part">\u{447}\u{438}\u{441}\u{43B}\u{43E}</span>)</p>      </div>`;let e=document.querySelector("#biggest-num__input--one"),t=document.querySelector("#biggest-num__input--two"),u=document.querySelector("#biggest-num__input--three"),a=document.querySelector(".biggest-num__text--part"),s=()=>{let s=[Number(e.value),Number(t.value),Number(u.value)],i=s[0];for(let e=0;e<s.length;e++)s[e]>i&&(i=s[e]);a.textContent=`${0===i?"число":i}`};e.addEventListener("input",s),t.addEventListener("input",s),u.addEventListener("input",s)},id:8,name:"Найбільше число",category:"numerical"},{id:9,name:"Наша команда",category:"acquaintance"},{id:10,name:"Вчений",category:"acquaintance"}];document.querySelector("[data-games]").innerHTML=r.reduce((e,t)=>e+=`      
+<p class="biggest-num__text">\u{41D}\u{430}\u{439}\u{431}\u{456}\u{43B}\u{44C}\u{448}\u{435} \u{447}\u{438}\u{441}\u{43B}\u{43E}, \u{44F}\u{43A}\u{435} \u{432}\u{438} \u{432}\u{432}\u{435}\u{43B}\u{438} - (<span class="biggest-num__text--part">\u{447}\u{438}\u{441}\u{43B}\u{43E}</span>)</p>      </div>`;let e=document.querySelector("#biggest-num__input--one"),t=document.querySelector("#biggest-num__input--two"),u=document.querySelector("#biggest-num__input--three"),a=document.querySelector(".biggest-num__text--part"),s=()=>{let s=[Number(e.value),Number(t.value),Number(u.value)],i=s[0];for(let e=0;e<s.length;e++)s[e]>i&&(i=s[e]);a.textContent=`${0===i?"число":i}`};e.addEventListener("input",s),t.addEventListener("input",s),u.addEventListener("input",s)},id:8,name:"Найбільше число",category:"numerical"},{id:9,name:"Наша команда",category:"acquaintance"},{id:10,name:"Вчений",category:"acquaintance"}];document.querySelector("[data-games]").innerHTML=o.reduce((e,t)=>e+=`      
     <section id="game-id_${t.id}" class="section">
         <div class="container">
           <div class="game game-id_${t.id}">
           </div>
         </div>
-      </section>`,""),r.forEach(e=>{e.init&&e.init()});
-//# sourceMappingURL=Magic-coding__Project.a4fc86c7.js.map
+      </section>`,""),o.forEach(e=>{e.init&&e.init()});let r=document.querySelector(".footer-form"),c=document.querySelector("[data-modal]"),d=document.querySelector("[data-modal-close]");console.log("Форма:",r),console.log("Бекдроп:",c),console.log("Кнопка закриття:",d),r.addEventListener("submit",e=>{e.preventDefault(),c.classList.remove("is-hidden"),r.reset()}),d.addEventListener("click",e=>{e.preventDefault(),c.classList.add("is-hidden")});
+//# sourceMappingURL=Magic-coding__Project.fd78f55b.js.map
