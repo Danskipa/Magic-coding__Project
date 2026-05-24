@@ -135,11 +135,28 @@
   width: 55px;
   height: 40px;
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo__link_photo--dark {
+  transform: translateY(-200%);
+}
+.logo__link_photo--white {
+  transform: translateY(-100%);
+}
+
+.logo__link_photo--dark.dark_logo {
+  transform: translateY(0);
+}
+.logo__link_photo--white.dark_logo {
+  transform: translateY(-300%);
 }
 .logo__link {
   display: flex;
   flex-direction: column;
   align-items: end;
+  width: 45px;
 }
 
 .logo__link--part {
@@ -179,6 +196,11 @@
 }
 .menu__item:hover {
   background-color: var(--colorBgChoose);
+  cursor: pointer;
+}
+.menu__item--dark:hover {
+  background-color: var(--colorBgChooseDark);
+  cursor: pointer;
 }
 .menu__item--three:hover {
   border-bottom-left-radius: 20px;
