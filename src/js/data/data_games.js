@@ -4,6 +4,7 @@ import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
 import { initDinosaurGame } from '../games/dinosaur-game.js';
 import { initLeapYearGame } from '../games/leap_year.js';
+import { initFootball } from '../games/football.js';
 
 import { initBiggestNummber } from '../games/biggest_num.js';
 
@@ -44,6 +45,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: initFootball,
     id: 7,
     name: 'Футбол',
     category: 'game',
