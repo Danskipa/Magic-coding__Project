@@ -57,7 +57,7 @@ let e=document.querySelector(".modal"),t=document.querySelector(".switcher");doc
         </article>
             <div class="field" data-field>
                 <div class="ball" data-ball ></div>
-            </div>`;let e=document.querySelector("[data-field]"),t=document.querySelector("[data-ball]");e.addEventListener("click",e=>{console.log(e);let u=e.offsetX-25,a=e.offsetY-25;t.style.left=u+"px",t.style.top=a+"px",t.classList.add("active"),timeSpin(()=>{t.classList.remove("active")},300)})},id:7,name:"Футбол",category:"game"},{init:()=>{document.querySelector(".game-id_8").innerHTML=`  <div class="biggest-num__container">
+            </div>`;let e=document.querySelector("[data-field]"),t=document.querySelector("[data-ball]");e.addEventListener("click",e=>{console.log(e);let u=e.offsetX-25,a=e.offsetY-25;t.style.left=u+"px",t.style.top=a+"px",t.classList.add("active"),setTimeout(()=>{t.classList.remove("active")},300)})},id:7,name:"Футбол",category:"game"},{init:()=>{document.querySelector(".game-id_8").innerHTML=`  <div class="biggest-num__container">
     <h2 class="biggest-num__title">\u{412}\u{432}\u{435}\u{434}\u{456}\u{442}\u{44C} 3 \u{447}\u{438}\u{441}\u{43B}\u{430}</h2>
       <ul class="biggest-num__list">
       <li class="biggest-num__item">
@@ -99,4 +99,4 @@ let e=document.querySelector(".modal"),t=document.querySelector(".switcher");doc
           </div>
         </div>
       </section>`,""),r.forEach(e=>{e.init&&e.init()});
-//# sourceMappingURL=Magic-coding__Project.c4471ad8.js.map
+//# sourceMappingURL=Magic-coding__Project.a4fc86c7.js.map
