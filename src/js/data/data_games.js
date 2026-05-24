@@ -2,6 +2,7 @@
 import { initGuessNumberGame } from '../games/guess-number.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
+import { initFootball } from '../games/football.js';
 
 
 export const games = [
@@ -40,6 +41,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: initFootball,
     id: 7,
     name: 'Футбол',
     category: 'game',

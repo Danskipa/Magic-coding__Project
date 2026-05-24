@@ -12,8 +12,8 @@ export const initTimeCalculatorGame = () => {
   gameContainer.innerHTML = gameHTML;
 
   //logic
-  const input = document.querySelector('[data-input]');
-  const button = document.querySelector('[data-button]');
+  const input = document.querySelector("[data-input]");
+  const button = document.querySelector("[data-button]");
   const result = document.querySelector("[data-result]")
   button.addEventListener("click", () => {
     let seconds = Number(input.value);
