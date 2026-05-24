@@ -20,7 +20,7 @@ export const initFootball = () => {
         ball.style.top = y + "px"
         ball.classList.add("active");
 
-        timeSpin(() => {
+        setTimeout(() => {
             ball.classList.remove("active");
         }, 300);
     }
