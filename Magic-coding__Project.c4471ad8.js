@@ -19,10 +19,12 @@ let e=document.querySelector(".modal"),t=document.querySelector(".switcher");doc
   `;let t=e.querySelector(".guess-input"),u=e.querySelector(".guess-subtitle"),a=Math.floor(100*Math.random())+1;t.addEventListener("input",e=>{let t=Number(e.target.value);t===a?u.textContent=`\u{412}\u{456}\u{442}\u{430}\u{44E}, \u{432}\u{438} \u{432}\u{433}\u{430}\u{434}\u{430}\u{43B}\u{438} \u{447}\u{438}\u{441}\u{43B}\u{43E}! (${a})`:t>a?u.textContent="Занадто велике число":u.textContent="Занадто мале число"})});let r=[{init:()=>{let e=document.querySelector(".game-id_1");if(!e)return;e.innerHTML=`
     <section class="leap-year-game">
       <h2 class="leap-year-title">\u{41F}\u{435}\u{440}\u{435}\u{432}\u{456}\u{440} \u{432} \u{44F}\u{43A}\u{438}\u{439} \u{440}\u{456}\u{43A} \u{442}\u{438} \u{43D}\u{430}\u{440}\u{43E}\u{434}\u{438}\u{432}\u{441}\u{44F}</h2>
-      <div class="leap-year-input-wrapper">
-        <input class="leap-year-input" type="number" placeholder="\u{412}\u{432}\u{435}\u{434}\u{456}\u{442}\u{44C} \u{440}\u{456}\u{43A} \u{43D}\u{430}\u{440}\u{43E}\u{434}\u{436}\u{435}\u{43D}\u{43D}\u{44F}" />
+      <div class="leap-year-box">
+        <div class="leap-year-input-wrapper">
+          <input class="leap-year-input" type="number" placeholder="\u{412}\u{432}\u{435}\u{434}\u{456}\u{442}\u{44C} \u{440}\u{456}\u{43A} \u{43D}\u{430}\u{440}\u{43E}\u{434}\u{436}\u{435}\u{43D}\u{43D}\u{44F}" />
+        </div>
+        <h3 class="leap-year-result"></h3>
       </div>
-      <h3 class="leap-year-result"></h3>
     </section>
   `;let t=e.querySelector(".leap-year-input"),u=e.querySelector(".leap-year-result");t.addEventListener("input",e=>{let t=Number(e.target.value);if(0===t){u.textContent="";return}t%4==0&&t%100!=0||t%400==0?(u.textContent="Ви народилися у високосний рік!",u.style.color="green"):(u.textContent="Ви народилися не у високосний рік.",u.style.color="black")})},id:1,name:"Високосний калькулятор",category:"numerical"},,{init:void 0,id:2,name:"Вгадай число",category:"numerical"},{id:3,name:"Камінь-Ножиці-Папір",category:"game"},{init:()=>{document.querySelector(".game-id_4").innerHTML=`<h2 class="calculator__title">\u{41A}\u{430}\u{43B}\u{44C}\u{43A}\u{443}\u{43B}\u{44F}\u{442}\u{43E}\u{440}</h2>
         <div class="calculator__game">
@@ -97,4 +99,4 @@ let e=document.querySelector(".modal"),t=document.querySelector(".switcher");doc
           </div>
         </div>
       </section>`,""),r.forEach(e=>{e.init&&e.init()});
-//# sourceMappingURL=Magic-coding__Project.91317aad.js.map
+//# sourceMappingURL=Magic-coding__Project.c4471ad8.js.map
