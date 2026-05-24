@@ -10,7 +10,6 @@
   display: block;
   width: 536px;
   height: 1px;
-  /* border: 1px solid var(--colorTextPrimary); */
   background-color: var(--colorTextPrimary);
 }
 .calculator__game {
