@@ -1,13 +1,15 @@
 export const initLeapYearGame = () => {
   const container = document.querySelector('.game-id_1'); // Ensure this matches your HTML
   if (!container) return;
-  const html = `
+const html = `
     <section class="leap-year-game">
       <h2 class="leap-year-title">Перевір в який рік ти народився</h2>
-      <div class="leap-year-input-wrapper">
-        <input class="leap-year-input" type="number" placeholder="Введіть рік народження" />
+      <div class="leap-year-box">
+        <div class="leap-year-input-wrapper">
+          <input class="leap-year-input" type="number" placeholder="Введіть рік народження" />
+        </div>
+        <h3 class="leap-year-result"></h3>
       </div>
-      <h3 class="leap-year-result"></h3>
     </section>
   `;
   container.innerHTML = html;
