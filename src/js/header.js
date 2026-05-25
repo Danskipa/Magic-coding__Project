@@ -1,3 +1,4 @@
+const html = document.querySelector('html');
 const modal = document.querySelector('.modal');
 const switcher = document.querySelector('.switcher');
 const helloingSpan = document.querySelector('.helloing__text--part');
@@ -15,7 +16,16 @@ const gamesSections = document.querySelectorAll('.section');
 
 const handleSwitcher = event => {
   if (event.target.checked) {
-    document.body.classList.add('dark');
+    html.style.setProperty('--colorCorrect', '#ff0086');
+    html.style.setProperty('--colorIncorrect', '#00ff48');
+    html.style.setProperty('--colorBgPrimary', '#000000');
+    html.style.setProperty('--colorBgSecondary', '#595959');
+    // html.style.setProperty('--colorBgField', '#565656');
+    // html.style.setProperty('--colorBgSwitch', '#fafafa');
+    // html.style.setProperty('--colorBgChoose', '#727272');
+    html.style.setProperty('--colorTextPrimary', '#ffffff');
+    // html.style.setProperty('--colorTextSecondary', '#fdfdfd');
+
     logoW.classList.add('dark_logo');
     logoD.classList.add('dark_logo');
 
@@ -23,7 +33,16 @@ const handleSwitcher = event => {
       item.classList.add('menu__item--dark');
     });
   } else {
-    document.body.classList.remove('dark');
+    html.style.setProperty('--colorCorrect', '#039900');
+    html.style.setProperty('--colorIncorrect', '#990000');
+    html.style.setProperty('--colorBgPrimary', '#ffffff');
+    html.style.setProperty('--colorBgSecondary', '#d9d9d9');
+    html.style.setProperty('--colorBgField', '#d7d7d7');
+    html.style.setProperty('--colorBgSwitch', '#7a7a7a');
+    html.style.setProperty('--colorBgChoose', '#f1f1f1');
+    html.style.setProperty('--colorTextPrimary', '#000000');
+    html.style.setProperty('--colorTextSecondary', '#7e7e7e');
+
     logoW.classList.remove('dark_logo');
     logoD.classList.remove('dark_logo');
 
@@ -38,6 +57,7 @@ const handleHelooing = event => {
 };
 
 const handleSave = event => {
+  event.preventDefault();
   if (btnSaveModal) {
     secondeModal.classList.remove('hidden');
   }
@@ -51,7 +71,7 @@ const handleClose = event => {
 
 switcher.addEventListener('change', handleSwitcher);
 formInput.addEventListener('input', handleHelooing);
-btnSaveModal.addEventListener('click', handleSave);
+btnSaveModal.addEventListener('submit', handleSave);
 btnCloseModal.addEventListener('click', handleClose);
 //sort
 import { games } from '../js/data/data_games.js';
@@ -72,6 +92,6 @@ const handlePlays = event => {
   });
 };
 
-plays.forEach(play => {
+menuItems.forEach(play => {
   play.addEventListener('click', handlePlays);
 });
