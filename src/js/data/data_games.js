@@ -1,8 +1,8 @@
 // import { initTestGame } from '../games/test_game.js';
 import { initGuessNumberGame } from '../games/guess-number.js';
+import { initRockPaperScissors } from '../games/rock-paper-scissors.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
-
 
 export const games = [
   {
@@ -18,6 +18,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initRockPaperScissors,
     id: 3,
     name: 'Камінь-Ножиці-Папір',
     category: 'game',

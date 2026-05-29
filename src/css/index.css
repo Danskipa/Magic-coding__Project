@@ -6,6 +6,7 @@
 @import './components/_header.css';
 @import './components/_container.css';
 @import './guess-number.css';
+@import './components/_rock-paper-scissors.css';
 @import './components/_calculator.css';
 @import './components/_time_calculator.css';
 @import './components/_footer.css';
