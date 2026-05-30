@@ -13,6 +13,7 @@ const logoD = document.querySelector('.logo__link_photo--dark');
 const menuItems = document.querySelectorAll('.menu__item');
 const mainGames = document.querySelectorAll(`.game`);
 const gamesSections = document.querySelectorAll('.section');
+const form = document.querySelector('.modal__form');
 
 const handleSwitcher = event => {
   if (event.target.checked) {
@@ -71,7 +72,7 @@ const handleClose = event => {
 
 switcher.addEventListener('change', handleSwitcher);
 formInput.addEventListener('input', handleHelooing);
-btnSaveModal.addEventListener('submit', handleSave);
+form.addEventListener('submit', handleSave);
 btnCloseModal.addEventListener('click', handleClose);
 //sort
 import { games } from '../js/data/data_games.js';
