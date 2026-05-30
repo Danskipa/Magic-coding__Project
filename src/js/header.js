@@ -75,6 +75,7 @@ formInput.addEventListener('input', handleHelooing);
 form.addEventListener('submit', handleSave);
 btnCloseModal.addEventListener('click', handleClose);
 //sort
+
 import { games } from '../js/data/data_games.js';
 
 const plays = document.querySelectorAll('.menu__text');
