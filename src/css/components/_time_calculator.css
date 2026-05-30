@@ -42,11 +42,6 @@
   color: var(--colorTextSecondary);
   max-width: 100px;
 }
-.time-calculator__input::-webkit-inner-spin-button,
-.time-calculator__input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 .time-calculator__button {
   width: 35px;
   height: 35px;
