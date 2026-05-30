@@ -1,8 +1,16 @@
-.guess-number {
+.game-id_2 {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  &&::before {
+    content: '';
+    display: block;
+    width: 536px;
+    height: 1px;
+    background-color: var(--colorTextPrimary);
+  }
 }
 
 .guess-title {
