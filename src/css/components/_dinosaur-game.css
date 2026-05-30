@@ -22,6 +22,7 @@
   background-repeat: repeat-x;
   margin: 0 44px;
   background-position: center calc(100% - 54px);
+  background-color: white;
 }
 .dinosaur {
   position: absolute;
@@ -82,12 +83,13 @@
 }
 .dinosaur__message {
   font-weight: bold;
+  color: black;
 }
 .dinosaur__start {
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: var(--colorTextPrimary);
-  color: var(--colorBgPrimary);
+  background-color: black;
+  color: white;
 }
 @keyframes moveBackground {
   from {
