@@ -1,0 +1,83 @@
+.game-id_3 {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-id_3::before {
+  display: block;
+  content: '';
+  width: 536px;
+  height: 1px;
+  background-color: var(--colorTextPrimary);
+  margin-bottom: 36px;
+}
+
+.rps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.rps-title {
+  font-size: 16px;
+}
+
+.rps-gameplay {
+  display: flex;
+}
+
+.rps-list {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+
+.rps-item {
+  padding: 10px;
+  background-color: var(--colorTextPrimary);
+  border: 0px solid black;
+  border-radius: 20px;
+}
+
+.rps-score {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 104px;
+}
+
+.rps-button__option {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rock {
+  background-image: url(../../images/rock.svg);
+}
+
+.scissors {
+  background-image: url(../../images/scissors.svg);
+}
+
+.paper {
+  background-image: url(../../images/paper.svg);
+}
+
+.rps-button {
+  background-color: var(--colorTextPrimary);
+  border: 0px solid black;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: var(--colorBgPrimary);
+  margin-bottom: 36px;
+}

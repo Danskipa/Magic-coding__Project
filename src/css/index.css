@@ -5,11 +5,14 @@
 @import './components/_container.css';
 
 @import './components/_header.css';
+@import './components/_container.css';
+@import './components/_leap_year.css';
 @import './components/_guess-number.css';
+@import './components/_rock-paper-scissors.css';
 @import './components/_calculator.css';
 @import './components/_time_calculator.css';
 @import './components/_dinosaur-game.css';
-@import './components/_biggest_num.css';
 @import './components/_football.css';
+@import './components/_biggest_num.css';
 @import './components/_footer.css';
-@import './components/_leap_year.css';
+
