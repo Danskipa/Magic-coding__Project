@@ -1,0 +1,146 @@
+.tone__box {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgb(128, 128, 128);
+}
+.tone__box--user {
+  position: relative;
+}
+.box__reference {
+  position: absolute;
+  width: 100%;
+  height: calc(100% / 2);
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.game-id_11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.game-id_11::before {
+  content: '';
+  display: block;
+  width: 536px;
+  height: 1px;
+  background-color: var(--colorTextPrimary);
+}
+.tone__game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tone__colors {
+  display: flex;
+  gap: 30px;
+}
+.similarity {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  top: 10px;
+  right: 10px;
+}
+.tone__controls {
+  position: absolute;
+  top: calc((100% - 108px) / 2);
+  left: calc((100% - (100% - 10%)) / 2);
+  background-color: rgba(255, 255, 255, 0.445);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 10%);
+  padding: 15px 0;
+  gap: 15px;
+  border-radius: 10px;
+}
+.tone__range {
+  appearance: none;
+  border-radius: 22px;
+  width: calc(100% - 20px);
+}
+.tone__range::-webkit-slider-thumb {
+  appearance: none;
+  background-color: 4;
+  border: 1px solid var(--colorBgSwitch);
+  background-color: var(--colorTextPrimary);
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+.tone__range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+.tone__range--red {
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(0, 0, 0),
+    rgb(255, 0, 0)
+  );
+}
+.tone__range--green {
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(0, 0, 0),
+    rgb(0, 255, 0)
+  );
+}
+.tone__range--blue {
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(0, 0, 0),
+    rgb(0, 0, 255)
+  );
+}
+.tone__btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: var(--colorTextPrimary);
+  border: none;
+  color: var(--colorBgChoose);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  z-index: 10;
+  font-weight: bold;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+.btn__done {
+  background-image: url(../../images/arrow-check.svg);
+}
+.btn__next {
+  background-image: url(../../images/arrow-right.svg);
+  animation: moveArrow 1s ease-in-out infinite;
+  transition: scale 0.5s ease;
+}
+.btn__done:hover {
+  transform: scale(1.1);
+}
+.btn__next:hover {
+  animation-play-state: paused;
+  scale: 1.1;
+}
+.is__closed {
+  display: none;
+  overflow: hidden;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(3);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(3);
+  }
+}
