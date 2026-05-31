@@ -10,12 +10,12 @@ import { initBiggestNummber } from '../games/biggest_num.js';
 import { initColorGame } from '../games/guess-color.js';
 
 export const games = [
- {
+  {
     init: initLeapYearGame,
     id: 1,
-    name: "Високосний калькулятор",
-    category: "numerical",
-  },,
+    name: 'Високосний калькулятор',
+    category: 'numerical',
+  },
   {
     init: initGuessNumberGame,
     id: 2,

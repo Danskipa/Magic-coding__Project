@@ -1,32 +1,30 @@
 export const initLeapYearGame = () => {
   const container = document.querySelector('.game-id_1'); // Ensure this matches your HTML
-  if (!container) return;
-const html = `
-    <section class="leap-year-game">
+
+  const html = `
       <h2 class="leap-year-title">Перевір в який рік ти народився</h2>
       <div class="leap-year-box">
         <div class="leap-year-input-wrapper">
-          <input class="leap-year-input" type="number" placeholder="Введіть рік народження" />
+          <input class="leap-year-input" placeholder="Введіть рік народження" />
         </div>
         <h3 class="leap-year-result"></h3>
       </div>
-    </section>
   `;
   container.innerHTML = html;
   const input = container.querySelector('.leap-year-input');
   const result = container.querySelector('.leap-year-result');
-  input.addEventListener('input', (event) => {
+  input.addEventListener('input', event => {
     const year = Number(event.target.value);
     if (year === 0) {
-      result.textContent = "";
+      result.textContent = '';
       return;
     }
-    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
-      result.textContent = "Ви народилися у високосний рік!";
-      result.style.color = "green";
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+      result.textContent = 'Ви народилися у високосний рік!';
+      result.style.color = 'green';
     } else {
-      result.textContent = "Ви народилися не у високосний рік.";
-      result.style.color = "black";
+      result.textContent = 'Ви народилися не у високосний рік.';
+      result.style.color = 'black';
     }
   });
 };

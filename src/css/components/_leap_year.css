@@ -25,7 +25,6 @@
 
 .leap-year-input-wrapper {
   position: relative;
-  display: inline-block;
 }
 
 .leap-year-input-wrapper::after {
@@ -36,48 +35,30 @@
   transform: translateY(-50%);
   width: 35px;
   height: 34px;
-  background-color: #000000;
+  background-color: var(--colorTextPrimary);
   border-radius: 0 20px 20px 0;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 20l-5.8-5.8a7 7 0 10-1.4 1.4L20 21zM5 10a5 5 0 1110 0 5 5 0 01-10 0z"/></svg>');
+  background-image: url('../../images/magnifyier.svg');
   background-size: 14px;
   background-position: center;
   background-repeat: no-repeat;
-  pointer-events: none;
 }
 
 .leap-year-input {
-  width: 230px;
-  padding: 10px 45px 10px 15px; 
-  font-size: 12px;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 400;
+  padding: 10px 45px 10px 15px;
   border-radius: 20px;
-  box-shadow: 3px 3px 0px #7e7e7e; 
-  background-color: #d7d7d7;
-  color: #7e7e7e;
-  border: none;
-  outline: none;
+  box-shadow: 3px 3px 0px var(--colorTextSecondary);
+  background-color: var(--colorBgField);
 }
 
 .leap-year-result {
   font-size: 14px;
   font-family: var(--fontPrimary);
   color: var(--colorCorrect);
-  width: 250px; 
+  width: 250px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   white-space: nowrap;
   flex-shrink: 0;
-}
-
-.leap-year-input::-webkit-outer-spin-button,
-.leap-year-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.leap-year-input {
-  -moz-appearance: textfield;
 }
