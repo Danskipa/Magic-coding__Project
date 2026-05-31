@@ -8,6 +8,7 @@
 @import './components/_main.css';
 @import './components/_section.css';
 @import './components/_leap_year.css';
+@import './components/_h1.css';
 @import './components/_guess-number.css';
 @import './components/_rock-paper-scissors.css';
 @import './components/_calculator.css';
