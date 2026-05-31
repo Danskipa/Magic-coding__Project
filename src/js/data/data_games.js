@@ -3,6 +3,7 @@ import { initGuessNumberGame } from '../games/guess-number.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
 import { initBiggestNummber } from '../games/biggest_num.js';
+import { initScientistsGame } from '../games/scientists.js';
 
 export const games = [
   {
@@ -56,6 +57,7 @@ export const games = [
     category: 'acquaintance',
   },
   {
+    init: initScientistsGame,
     id: 10,
     name: 'Вчений',
     category: 'acquaintance',
