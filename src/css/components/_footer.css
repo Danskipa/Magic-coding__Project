@@ -67,7 +67,7 @@
   top: 30px;
 }
 
-.modal-title {
+.footer__modal-title {
   font-size: 20px;
   font-family: var(--fontSecondary);
 }
@@ -87,7 +87,7 @@
   pointer-events: none;
 }
 
-.modal {
+.footer__modal {
   background-color: var(--colorBgPrimary);
   width: 463px;
   height: 245px;

@@ -1,0 +1,5 @@
+.section {
+  max-width: 1090px;
+  margin-inline: auto;
+  background-color: var(--colorBgPrimary);
+}
