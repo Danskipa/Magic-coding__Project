@@ -9,7 +9,6 @@ const initGuessNumberGame = () => {
               class="guess-input"
               placeholder="Введіть число"
               id="number"
-              type="number"
             />
           </div>
           <label for="number"></label>

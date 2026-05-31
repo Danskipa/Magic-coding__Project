@@ -10,9 +10,7 @@ const btnCloseModal = document.querySelector('.close__button');
 const logoLink = document.querySelector('.logo__link--picture');
 const logoW = document.querySelector('.logo__link_photo--white');
 const logoD = document.querySelector('.logo__link_photo--dark');
-const menuItems = document.querySelectorAll('.menu__item');
 const mainGames = document.querySelectorAll(`.game`);
-const gamesSections = document.querySelectorAll('.section');
 const form = document.querySelector('.modal__form');
 
 const handleSwitcher = event => {
@@ -74,26 +72,3 @@ switcher.addEventListener('change', handleSwitcher);
 formInput.addEventListener('input', handleHelooing);
 form.addEventListener('submit', handleSave);
 btnCloseModal.addEventListener('click', handleClose);
-//sort
-
-import { games } from '../js/data/data_games.js';
-
-const plays = document.querySelectorAll('.menu__text');
-
-const handlePlays = event => {
-  const selected = event.currentTarget.dataset.category;
-
-  gamesSections.forEach((gamesSections, i) => {
-    const game = games[i];
-
-    if (game.category === selected) {
-      gamesSections.style.display = 'block';
-    } else {
-      gamesSections.style.display = 'none';
-    }
-  });
-};
-
-menuItems.forEach(play => {
-  play.addEventListener('click', handlePlays);
-});
