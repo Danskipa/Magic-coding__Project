@@ -45,9 +45,14 @@ export const initRockPaperScissors = () => {
   const playerScoreElement = gameContainer.querySelector('#player-score');
   const optionButtons = gameContainer.querySelectorAll('.rps-button__option');
   const playButton = gameContainer.querySelector('.rps-button');
+  const rpsItems = gameContainer.querySelectorAll('.rps-item');
 
   const handlePlayerChoice = event => {
     playerChoice = event.target.dataset.choice;
+    rpsItems.forEach(item => item.classList.remove('active'));
+
+    const parentLi = event.target.parentElement;
+    parentLi.classList.add('active');
   };
 
   const handlePlayClick = event => {
@@ -91,6 +96,8 @@ export const initRockPaperScissors = () => {
       resultText.textContent = 'Комп’ютер виграв раунд!';
       resultText.style.color = '#990000';
     }
+
+    playerChoice = '';
 
     cpuScoreElement.textContent = `Комп'ютер - ${computerScore}`;
     playerScoreElement.textContent = `Ви - ${playerScore}`;

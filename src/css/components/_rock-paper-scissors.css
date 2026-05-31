@@ -27,7 +27,7 @@
 }
 
 .rps-gameplay {
-  display: flex;
+  position: relative;
 }
 
 .rps-list {
@@ -41,13 +41,13 @@
   background-color: var(--colorTextPrimary);
   border: 0px solid black;
   border-radius: 20px;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .rps-score {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-left: 104px;
+  position: absolute;
+  right: -75%;
+  top: -0%;
 }
 
 .rps-button__option {
@@ -56,6 +56,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.rps-item:hover {
+  box-shadow: 0 8px 15px #000000;
+}
+
+.rps-button__option:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.rps-button__option:active {
+  transform: translateY(2px) scale(0.98);
 }
 
 .rock {
