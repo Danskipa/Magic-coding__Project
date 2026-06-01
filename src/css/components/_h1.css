@@ -5,13 +5,7 @@
   gap: 36px;
   padding-bottom: 36px;
 }
-.h1_container::after {
-  content: '';
-  display: block;
-  background-color: var(--colorTextPrimary);
-  height: 1px;
-  width: 536px;
-}
+
 .main_title {
   font-family: var(--font-family);
   font-size: 24px;
