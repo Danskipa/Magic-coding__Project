@@ -45,14 +45,13 @@ export const initRockPaperScissors = () => {
   const playerScoreElement = gameContainer.querySelector('#player-score');
   const optionButtons = gameContainer.querySelectorAll('.rps-button__option');
   const playButton = gameContainer.querySelector('.rps-button');
-  const rpsItems = gameContainer.querySelectorAll('.rps-item');
 
   const handlePlayerChoice = event => {
     playerChoice = event.target.dataset.choice;
-    rpsItems.forEach(item => item.classList.remove('active'));
+    optionButtons.forEach(btn => btn.classList.remove('rps-button__option--active'));
 
-    const parentLi = event.target.parentElement;
-    parentLi.classList.add('active');
+    const parentLi = event.target;
+    parentLi.classList.add('rps-button__option--active');
   };
 
   const handlePlayClick = event => {
