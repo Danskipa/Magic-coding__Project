@@ -1,13 +1,18 @@
 // import { initTestGame } from '../games/test_game.js';
 import { initGuessNumberGame } from '../games/guess-number.js';
+import { initRockPaperScissors } from '../games/rock-paper-scissors.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
+import { initDinosaurGame } from '../games/dinosaur-game.js';
+import { initLeapYearGame } from '../games/leap_year.js';
+import { initFootball } from '../games/football.js';
 import { initBiggestNummber } from '../games/biggest_num.js';
 import { initScientistsGame } from '../games/scientists.js';
+import { initColorGame } from '../games/guess-color.js';
 
 export const games = [
   {
-    // init: initTestGame,
+    init: initLeapYearGame,
     id: 1,
     name: 'Високосний калькулятор',
     category: 'numerical',
@@ -19,6 +24,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initRockPaperScissors,
     id: 3,
     name: 'Камінь-Ножиці-Папір',
     category: 'game',
@@ -36,11 +42,13 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initDinosaurGame,
     id: 6,
     name: 'Google динозаврик',
     category: 'game',
   },
   {
+    init: initFootball,
     id: 7,
     name: 'Футбол',
     category: 'game',
@@ -61,5 +69,11 @@ export const games = [
     id: 10,
     name: 'Вчений',
     category: 'acquaintance',
+  },
+  {
+    init: initColorGame,
+    id: 11,
+    name: 'Вгадай колір',
+    category: 'game',
   },
 ];

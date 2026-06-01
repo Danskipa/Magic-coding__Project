@@ -54,3 +54,84 @@
 .footer-text {
   font-size: 6px;
 }
+
+.btn__close {
+  background-color: var(--color-text-primary);
+  width: 15px;
+  height: 15px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.footer__modal-title {
+  font-size: 20px;
+  font-family: var(--fontSecondary);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.footer__modal {
+  background-color: var(--colorBgPrimary);
+  width: 463px;
+  height: 245px;
+  top: 50%;
+  left: 50%;
+  border: 0px solid black;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalphoto {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/sword.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+}
+.modalphoto-one {
+  left: 43px;
+  top: 69px;
+  z-index: 70;
+}
+.modalphoto-two {
+  background-image: url(../../images/puzzle.svg);
+  left: 87px;
+  bottom: 70px;
+  z-index: 70;
+}
+.modalphoto-three {
+  background-image: url(../../images/tic-tac-toe.svg);
+  bottom: 70px;
+  right: 86px;
+  z-index: 70;
+}
+.modalphoto-four {
+  background-image: url(../../images/game-development.svg);
+  right: 42px;
+  top: 69px;
+  z-index: 70;
+}
