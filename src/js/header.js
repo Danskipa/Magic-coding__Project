@@ -8,7 +8,7 @@ const btnSaveModal = document.querySelector('.form__button');
 const secondeBackdropHeader = document.querySelector(
   '.seconde__backdrop__header'
 );
-const btnCloseModal = document.querySelector('.close__button');
+const btnCloseModal = document.querySelectorAll('.close__button');
 const logoLink = document.querySelector('.logo__link--picture');
 const logoW = document.querySelector('.logo__link_photo--white');
 const logoD = document.querySelector('.logo__link_photo--dark');
@@ -60,10 +60,11 @@ const handleClose = event => {
   modalPhotos.classList.add('hidden');
   backdropHeader.classList.add('hidden');
   secondeBackdropHeader.classList.add('hidden');
-  modals.classList.add('hidden');
 };
 
 switcher.addEventListener('change', handleSwitcher);
 formInput.addEventListener('input', handleHelooing);
 form.addEventListener('submit', handleSave);
-btnCloseModal.addEventListener('click', handleClose);
+btnCloseModal.forEach(btn => {
+  btn.addEventListener('click', handleClose);
+});
