@@ -7,6 +7,7 @@ import { initDinosaurGame } from '../games/dinosaur-game.js';
 import { initLeapYearGame } from '../games/leap_year.js';
 import { initFootball } from '../games/football.js';
 import { initBiggestNummber } from '../games/biggest_num.js';
+import { initScientistsGame } from '../games/scientists.js';
 import { initColorGame } from '../games/guess-color.js';
 
 export const games = [
@@ -64,6 +65,7 @@ export const games = [
     category: 'acquaintance',
   },
   {
+    init: initScientistsGame,
     id: 10,
     name: 'Вчений',
     category: 'acquaintance',
