@@ -21,13 +21,8 @@ const handleSwitcher = event => {
   if (event.target.checked) {
     html.style.setProperty('--colorBgPrimary', '#000000db');
     html.style.setProperty('--colorTextPrimary', '#ffffffb9');
-
     logoW.classList.add('dark_logo');
     logoD.classList.add('dark_logo');
-
-    menuItems.forEach(item => {
-      item.classList.add('menu__item--dark');
-    });
   } else {
     html.style.setProperty('--colorCorrect', '#039900');
     html.style.setProperty('--colorIncorrect', '#990000');
