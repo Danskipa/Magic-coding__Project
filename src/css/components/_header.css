@@ -120,7 +120,7 @@
 }
 
 .seconde__backdrop__header {
-  background-color: var(--colorBgPrimary);
+  background-color: var(--colorBgModal);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +129,8 @@
   inset: 0;
 }
 .seconde__modal {
+  border-radius: 20px;
+  background-color: var(--colorBgPrimary);
   padding-top: 85px;
   position: relative;
   display: flex;
