@@ -9,6 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 1120px;
 }
 
 .footer-list {
@@ -134,4 +135,11 @@
   right: 42px;
   top: 69px;
   z-index: 70;
+}
+
+@media (max-width:1024px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
