@@ -1,29 +1,26 @@
 const html = document.querySelector('html');
-const modal = document.querySelector('.modal');
+const backdropHeader = document.querySelector('.backdrop__header');
 const switcher = document.querySelector('.switcher');
 const helloingSpan = document.querySelector('.helloing__text--part');
 const formInput = document.querySelector('.form__input');
 const helloingUser = document.querySelector('.helloing__text--part');
 const btnSaveModal = document.querySelector('.form__button');
-const secondeModal = document.querySelector('.seconde__modal');
+const secondeBackdropHeader = document.querySelector(
+  '.seconde__backdrop__header'
+);
 const btnCloseModal = document.querySelector('.close__button');
 const logoLink = document.querySelector('.logo__link--picture');
 const logoW = document.querySelector('.logo__link_photo--white');
 const logoD = document.querySelector('.logo__link_photo--dark');
 const mainGames = document.querySelectorAll(`.game`);
 const form = document.querySelector('.modal__form');
+const modalPhotos = document.querySelector('.modal__photo--seconde');
+const modals = document.querySelector('.modals');
 
 const handleSwitcher = event => {
   if (event.target.checked) {
-    html.style.setProperty('--colorCorrect', '#ff0086');
-    html.style.setProperty('--colorIncorrect', '#00ff48');
-    html.style.setProperty('--colorBgPrimary', '#000000');
-    html.style.setProperty('--colorBgSecondary', '#595959');
-    // html.style.setProperty('--colorBgField', '#565656');
-    // html.style.setProperty('--colorBgSwitch', '#fafafa');
-    // html.style.setProperty('--colorBgChoose', '#727272');
-    html.style.setProperty('--colorTextPrimary', '#ffffff');
-    // html.style.setProperty('--colorTextSecondary', '#fdfdfd');
+    html.style.setProperty('--colorBgPrimary', '#000000db');
+    html.style.setProperty('--colorTextPrimary', '#ffffffb9');
 
     logoW.classList.add('dark_logo');
     logoD.classList.add('dark_logo');
@@ -57,15 +54,13 @@ const handleHelooing = event => {
 
 const handleSave = event => {
   event.preventDefault();
-  if (btnSaveModal) {
-    secondeModal.classList.remove('hidden');
-  }
+  secondeBackdropHeader.classList.remove('hidden');
 };
 const handleClose = event => {
-  if (btnCloseModal) {
-    modal.classList.add('hidden');
-    secondeModal.classList.add('hidden');
-  }
+  modalPhotos.classList.add('hidden');
+  backdropHeader.classList.add('hidden');
+  secondeBackdropHeader.classList.add('hidden');
+  modals.classList.add('hidden');
 };
 
 switcher.addEventListener('change', handleSwitcher);

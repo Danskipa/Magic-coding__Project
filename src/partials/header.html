@@ -1,46 +1,66 @@
 <div class="container header__container">
-  <article class="modal">
-    <div class="modal__all">
-      <button class="close__button"></button>
+  <div class="modals">
+    <div class="backdrop__header">
+      <div class="modal">
+        <button class="close__button"></button>
 
-      <ul class="modal__list">
-        <li class="modal__item">
-          <div class="modal__photo modal__photo--one"></div>
-        </li>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <div class="modal__photo modal__photo--one"></div>
+          </li>
 
-        <li class="modal__item">
-          <div class="modal__photo modal__photo--two"></div>
-        </li>
-        <li class="modal__item">
-          <div class="modal__photo modal__photo--three"></div>
-        </li>
-        <li class="modal__item">
-          <div class="modal__photo modal__photo--four"></div>
-        </li>
-      </ul>
-      <p class="modal__text">
-        <span class="modal__text--part">Привіт!</span> Ви потрапили на сайт
-        інтерактивних ігор та завдань Надіємось, що вам сподобається і ви
-        отримаєте позитивні емоції! Бажаємо Вам гарно провести час!!
-      </p>
-      <form class="modal__form">
-        <p class="form__text">Введіть своє ім’я:</p>
-        <input
-          class="form__input"
-          id="form__input"
-          type="text"
-          placeholder="Ваше ім’я..."
-          required
-        />
-        <button class="form__button">Зберегти</button>
-      </form>
+          <li class="modal__item">
+            <div class="modal__photo modal__photo--two"></div>
+          </li>
+          <li class="modal__item">
+            <div class="modal__photo modal__photo--three"></div>
+          </li>
+          <li class="modal__item">
+            <div class="modal__photo modal__photo--four"></div>
+          </li>
+        </ul>
+        <p class="modal__text">
+          <span class="modal__text--part">Привіт!</span> Ви потрапили на сайт
+          інтерактивних ігор та завдань Надіємось, що вам сподобається і ви
+          отримаєте позитивні емоції! Бажаємо Вам гарно провести час!!
+        </p>
+        <form class="modal__form">
+          <p class="form__text">Введіть своє ім’я:</p>
+          <input
+            class="form__input"
+            id="form__input"
+            type="text"
+            placeholder="Ваше ім’я..."
+            required
+          />
+          <button class="form__button">Зберегти</button>
+        </form>
+      </div>
     </div>
+    <div class="seconde__backdrop__header hidden">
+      <div class="seconde__modal">
+        <button class="close__button"></button>
 
-    <div class="seconde__modal hidden">
-      <h2 class="modal__title">Дякую за підписку!</h2>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <div class="modal__photo--seconde modal__photo--five"></div>
+          </li>
+
+          <li class="modal__item">
+            <div class="modal__photo--seconde modal__photo--six"></div>
+          </li>
+          <li class="modal__item">
+            <div class="modal__photo--seconde modal__photo--seven"></div>
+          </li>
+          <li class="modal__item">
+            <div class="modal__photo--seconde modal__photo--eight"></div>
+          </li>
+        </ul>
+
+        <h2 class="modal__title">Дякую за підписку!</h2>
+      </div>
     </div>
-  </article>
-
+  </div>
   <div class="header__logo">
     <a class="logo__link_picture" href="#">
       <div class="logo__link_photo logo__link_photo--dark">
