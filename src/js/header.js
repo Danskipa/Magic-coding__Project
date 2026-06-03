@@ -9,9 +9,10 @@ const secondeBackdropHeader = document.querySelector(
   '.seconde__backdrop__header'
 );
 const btnCloseModal = document.querySelectorAll('.close__button');
-const logoLink = document.querySelector('.logo__link--picture');
 const logoW = document.querySelector('.logo__link_photo--white');
 const logoD = document.querySelector('.logo__link_photo--dark');
+const logoWF = document.querySelector('.footer__logo__link_photo--white');
+const logoDF = document.querySelector('.footer__logo__link_photo--dark');
 const mainGames = document.querySelectorAll(`.game`);
 const form = document.querySelector('.modal__form');
 const modalPhotos = document.querySelector('.modal__photo--seconde');
@@ -19,11 +20,23 @@ const modals = document.querySelector('.modals');
 
 const handleSwitcher = event => {
   if (event.target.checked) {
-    html.style.setProperty('--colorBgPrimary', '#000000db');
+    html.style.setProperty('--colorBgMain', '#111111');
+    html.style.setProperty('--colorCorrect', '#FC66FF');
+    html.style.setProperty('--colorIncorrect', '#66FFFF');
+    html.style.setProperty('--colorBgPrimary', '#1a1a1a');
+    html.style.setProperty('--colorBgSecondary', '#262626');
+    html.style.setProperty('--colorBgField', '#282828');
+    html.style.setProperty('--colorBgSwitch', '#858585');
+    html.style.setProperty('--colorBgChoose', '#0E0E0E');
     html.style.setProperty('--colorTextPrimary', '#ffffffb9');
+    html.style.setProperty('--colorTextSecondary', '#818181');
+    html.style.setProperty('--colorBgRPS', '#282828');
     logoW.classList.add('dark_logo');
     logoD.classList.add('dark_logo');
+    logoWF.classList.add('dark_logo');
+    logoDF.classList.add('dark_logo');
   } else {
+    html.style.setProperty('--colorBgMain', '#eeeeee');
     html.style.setProperty('--colorCorrect', '#039900');
     html.style.setProperty('--colorIncorrect', '#990000');
     html.style.setProperty('--colorBgPrimary', '#ffffff');
@@ -36,10 +49,8 @@ const handleSwitcher = event => {
 
     logoW.classList.remove('dark_logo');
     logoD.classList.remove('dark_logo');
-
-    menuItems.forEach(item => {
-      item.classList.remove('menu__item--dark');
-    });
+    logoWF.classList.remove('dark_logo');
+    logoDF.classList.remove('dark_logo');
   }
 };
 
