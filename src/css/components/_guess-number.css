@@ -4,13 +4,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  &&::before {
-    content: '';
-    display: block;
-    width: 536px;
-    height: 1px;
-    background-color: var(--colorTextPrimary);
-  }
+}
+
+.game-id_2::before {
+  content: '';
+  display: block;
+  width: 536px;
+  height: 1px;
+  background-color: var(--colorTextPrimary);
 }
 
 .guess-title {
@@ -24,8 +25,9 @@
 .guess-box {
   display: flex;
   flex-direction: row;
-  gap: 202px;
+  /* gap: 202px; */
   position: relative;
+  text-align: end;
 }
 
 .guess-input-wrapper {
@@ -49,7 +51,7 @@
 }
 
 .guess-input {
-  max-width: 150px;
+  /* max-width: 150px; */
   padding: 10px;
   font-size: 12px;
   font-weight: 400;
@@ -58,6 +60,8 @@
   background-color: #d7d7d7;
   color: var(--colorTextSecondary);
   margin-bottom: 36px;
+  box-shadow: 3px 3px 0px var(--colorTextSecondary);
+  /* flex-grow: 1; */
 }
 
 .guess-subtitle {
@@ -65,4 +69,5 @@
   font-size: 12px;
   font-weight: 400;
   color: #039900;
+  width: 426px;
 }
