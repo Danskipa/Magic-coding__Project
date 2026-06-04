@@ -39,6 +39,7 @@
   height: 40;
   top: 90px;
   left: 150px;
+  pointer-events: none;
 
   transition: 0.5s;
   transition:
