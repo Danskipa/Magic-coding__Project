@@ -23,10 +23,10 @@ const html = `
     }
     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
       result.textContent = "Ви народилися у високосний рік!";
-      result.style.color = "green";
+      result.style.color = "var(--colorCorrect)";
     } else {
       result.textContent = "Ви народилися не у високосний рік.";
-      result.style.color = "black";
+      result.style.color = "var(--colorIncorrect)";
     }
   });
 };

@@ -51,11 +51,6 @@ export const games = [
     category: 'numerical',
   },
   {
-    id: 9,
-    name: 'Наша команда',
-    category: 'acquaintance',
-  },
-  {
     id: 10,
     name: 'Вчений',
     category: 'acquaintance',
