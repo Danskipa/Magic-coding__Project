@@ -1,3 +1,17 @@
+.game-id_10 {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+  padding-bottom: 36px;
+}
+.game-id_10::before {
+  content: '';
+  display: block;
+  width: 536px;
+  height: 1px;
+  background-color: var(--colorTextPrimary);
+}
 .scientists-title {
   font-size: 16px;
   font-weight: 400;

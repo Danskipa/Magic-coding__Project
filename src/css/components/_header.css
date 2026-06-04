@@ -1,5 +1,9 @@
 .header {
   background-color: var(--colorBgPrimary);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 40;
 }
 /* modal */
 .modals {
@@ -182,6 +186,7 @@
 }
 /* header */
 .header__container {
+  height: 80px;
   max-width: 1120px;
   padding-top: 20px;
   display: flex;
@@ -338,4 +343,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 15px;
+}
+.main {
+  padding-top: 80px;
 }
