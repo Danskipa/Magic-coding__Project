@@ -51,7 +51,7 @@ const handleSwitcher = event => {
       html.style.setProperty('--colorBgChoose', '#f1f1f1');
       html.style.setProperty('--colorTextPrimary', '#000000');
       html.style.setProperty('--colorTextSecondary', '#7e7e7e');
-      html.style.setProperty('----colorBgPaginationBullet', '#d9d9d9');
+      html.style.setProperty('--colorBgPaginationBullet', '#d9d9d9');
       logoW.classList.remove('dark_logo');
       logoD.classList.remove('dark_logo');
       logoWF.classList.remove('dark_logo');
