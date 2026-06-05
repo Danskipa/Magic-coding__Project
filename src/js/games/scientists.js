@@ -21,13 +21,14 @@ export const initScientistsGame = () => {
 
      <ul class="scientists-tasks">
        <li class="scientists-item"><button id="btn-born19" class="scientists-btn">Які вчені народилися в 19 ст.</button></li>
+              <li class="scientists-item"><button id="btn-einstein" class="scientists-btn">Знайти рік народження Albert Einstein</button></li>
        <li class="scientists-item"><button id="btn-sortAlphabet" class="scientists-btn">Відсортувати за алфавітом</button></li>
+              <li class="scientists-item"><button id="btn-lastNameC" class="scientists-btn">Знайти вчених, прізвища яких починаються на “С”</button></li>
        <li class="scientists-item"><button id="btn-sortLifespan" class="scientists-btn">Відсортувати вчених за кількістю прожитих років</button></li>
+              <li class="scientists-item"><button id="btn-removeA" class="scientists-btn">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
        <li class="scientists-item"><button id="btn-latestBorn" class="scientists-btn">Знайти вченого, який народився найпізніше</button></li>
-       <li class="scientists-item"><button id="btn-einstein" class="scientists-btn">Знайти рік народження Albert Einstein</button></li>
-       <li class="scientists-item"><button id="btn-lastNameC" class="scientists-btn">Знайти вчених, прізвища яких починаються на “С”</button></li>
-       <li class="scientists-item"><button id="btn-removeA" class="scientists-btn">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
-       <li class="scientists-item"><button id="btn-longShort" class="scientists-btn">Знайти вченого, який прожив найдовше і найменше</button></li>
+       <li class="scientists-item scientists-item--longshor"><button id="btn-longShort" class="scientists-btn">Знайти вченого, який прожив найдовше і вченого, 
+який прожив найменше</button></li>
        <li class="scientists-item"><button id="btn-sameInitials" class="scientists-btn">1. Знайти вчених, в яких співпадають перші літери імені і прізвища</button></li>
      </ul>
   `;
