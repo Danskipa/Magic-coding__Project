@@ -6,6 +6,16 @@
   padding-bottom: 36px;
   padding-top: 36px;
 }
+
+.game-id_1::before {
+  content: '';
+  width:536px;
+  background-color: var(--colorTextPrimary);
+  height: 1px;
+  display: block;
+  margin-inline: auto;
+} 
+
 .leap-year-game {
   display: flex;
   flex-direction: column;

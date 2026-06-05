@@ -19,12 +19,12 @@ export const initLeapYearGame = () => {
       result.textContent = '';
       return;
     }
-    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-      result.textContent = 'Ви народилися у високосний рік!';
-      result.style.color = 'green';
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+      result.textContent = "Ви народилися у високосний рік!";
+      result.style.color = "var(--colorCorrect)";
     } else {
-      result.textContent = 'Ви народилися не у високосний рік.';
-      result.style.color = 'black';
+      result.textContent = "Ви народилися не у високосний рік.";
+      result.style.color = "var(--colorIncorrect)";
     }
   });
 };
