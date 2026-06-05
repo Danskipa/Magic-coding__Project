@@ -1,8 +1,17 @@
-.guess-number {
+.game-id_2 {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.game-id_2::before {
+  content: '';
+  display: block;
+  width: 536px;
+  height: 1px;
+  background-color: var(--colorTextPrimary);
 }
 
 .guess-title {
@@ -10,15 +19,15 @@
   font-weight: 400;
   margin-bottom: 36px;
   margin-top: 36px;
-  color: colorTextPrimary;
-  font-family: 'Montserrat Alternates', sans-serif;
+  color: var(--colorTextPrimary);
 }
 
 .guess-box {
   display: flex;
   flex-direction: row;
-  gap: 202px;
+  /* gap: 202px; */
   position: relative;
+  text-align: end;
 }
 
 .guess-input-wrapper {
@@ -35,24 +44,24 @@
   height: 34px;
   background-color: #000000;
   border-radius: 0 20px 20px 0;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 20l-5.8-5.8a7 7 0 10-1.4 1.4L20 21zM5 10a5 5 0 1110 0 5 5 0 01-10 0z"/></svg>');
+  background-image: url('../../images/magnifyier.svg');
   background-size: 14px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .guess-input {
-  max-width: 150px;
+  /* max-width: 150px; */
   padding: 10px;
   font-size: 12px;
-  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
   border-radius: 20px;
-  box-shadow: 3 3 0 0 #7e7e7e;
-  background-color: #d7d7d7;
-  color: #7e7e7e;
-  border: none;
+  box-shadow: 3 3 0 0 #00000040;
+  background-color: var(--colorBgField);
+  color: var(--colorTextSecondary);
   margin-bottom: 36px;
+  box-shadow: 3px 3px 0px var(--colorTextSecondary);
+  /* flex-grow: 1; */
 }
 
 .guess-subtitle {
@@ -60,5 +69,5 @@
   font-size: 12px;
   font-weight: 400;
   color: #039900;
-  font-family: 'Montserrat Alternates', sans-serif;
+  width: 426px;
 }

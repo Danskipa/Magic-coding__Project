@@ -42,16 +42,18 @@
   color: var(--colorTextSecondary);
   max-width: 100px;
 }
+/*---------- Щоб прибрати стрілки у інпута. ---------*/
 .time-calculator__input::-webkit-inner-spin-button,
 .time-calculator__input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+/* ---------------------------------------------------- */
 .time-calculator__button {
   width: 35px;
   height: 35px;
   border: 0;
-  background-color: var(--colorTextPrimary);
+  background-color: #000000;
   background-image: url('../../images/magnifyier.svg');
   filter: var(--colorBgPrimary);
   background-repeat: no-repeat;

@@ -23,4 +23,18 @@ const renderGames = (games, container) => {
 };
 renderGames(games, gamesContainer);
 
+const gamesSections = document.querySelectorAll('.section');
+const menuItems = document.querySelectorAll('.menu__item');
+const plays = document.querySelectorAll('.menu__text');
 
+const handlePlays = event => {
+  const selected = event.currentTarget.dataset.category;
+
+  const filteredGames = games.filter(game => game.category === selected);
+
+  renderGames(filteredGames, gamesContainer);
+};
+
+menuItems.forEach(play => {
+  play.addEventListener('click', handlePlays);
+});
