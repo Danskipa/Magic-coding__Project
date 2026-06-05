@@ -209,24 +209,58 @@
   transform: translateY(-200%);
 }
 .logo__link_photo--white {
+  transition: transform 100ms ease-in;
+  &:hover {
+    transform: translateY(calc(-100% + 2px));
+  }
+  &:active {
+    transform: scale(0.95) translateY(calc(-100% + 2px));
+  }
   transform: translateY(-100%);
 }
 
 .logo__link_photo--dark.dark_logo {
+  transition: transform 100ms ease-in;
+  &:hover {
+    transform: translateY(2px);
+  }
+  &:active {
+    transform: scale(0.95) translateY(2px);
+  }
   transform: translateY(0);
 }
 .logo__link_photo--white.dark_logo {
   transform: translateY(-300%);
+}
+.logo__links {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .logo__link {
   display: flex;
   flex-direction: column;
   align-items: end;
   width: 45px;
+  transition: transform 100ms ease-in;
+  &:hover {
+    transform: translateY(2px);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 .logo__link--part {
+  transition: transform 100ms ease-in;
+
   font-family: var(--fontLogo);
+  &:hover {
+    transform: translateY(2px);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
 }
 .about__list {
   display: flex;
@@ -241,13 +275,14 @@
 .menu:hover {
   overflow: visible;
 }
+
 .menu__interactive {
   padding-left: 30px;
   width: 160px;
   display: flex;
   align-items: center;
   gap: 10px;
-  &&::after {
+  &::after {
     transform: rotate(0);
     transition-duration: 500ms;
     transition-property: transform;
@@ -260,6 +295,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
+.menu__interactive.dark {
+  &::after {
+    background-image: url(../../images/arrow-dark.svg);
   }
 }
 .menu:hover .menu__interactive::after {
@@ -293,6 +333,20 @@
   background-color: var(--colorBgChoose);
   cursor: pointer;
 }
+.menu__text {
+  text-align: center;
+  position: relative;
+  transition-duration: 300ms;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.menu__item:hover > .menu__text {
+  transform: translateX(-20px);
+  transition-delay: 150ms;
+}
+.menu__item:nth-child(odd):hover > .menu__text {
+  transform: translateX(20px);
+}
 .menu__item--dark:hover {
   background-color: var(--colorBgChooseDark);
   cursor: pointer;
@@ -304,6 +358,12 @@
 .header__about {
   display: flex;
   flex-grow: 1;
+}
+.about__item {
+  transition: transform ease-in-out 450ms;
+}
+.about__item:hover {
+  transform: rotate(-5deg) translateY(10px);
 }
 .header__somthing {
   display: flex;
@@ -318,6 +378,19 @@
   background-color: var(--colorBgSwitch);
   border-radius: 50px;
 }
+.switcher:hover {
+  transition-property: rotate;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  rotate: 5deg;
+}
+.switcher:active {
+  transition-delay: 250ms;
+  transition-property: rotate;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  rotate: 10deg;
+}
 .switcher:checked::before {
   transform: translatex(100%);
   background-color: #000000;
@@ -326,8 +399,22 @@
   background-repeat: no-repeat;
   border: 1px solid #000000;
 }
+.switcher:checked:hover {
+  transition-property: rotate;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  rotate: -5deg;
+}
+.switcher:checked:active {
+  transition-delay: 250ms;
+  transition-property: rotate;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+  rotate: -10deg;
+}
 .switcher::before {
   transform: translatex(0);
+  transition-delay: 100ms;
   transition-duration: 500ms;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);

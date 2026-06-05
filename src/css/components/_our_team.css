@@ -71,9 +71,31 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-
   width: 50px;
   height: 100px;
+  transition-duration: 500ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-delay: 150ms;
+}
+
+.swiper-button.dark {
+  background-image: url(../../images/arrow-to-side_dark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 100px;
+  transition-duration: 500ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-delay: 150ms;
+}
+.swiper-button:hover {
+  transform: translateY(5px);
+}
+.swiper-button:active {
+  transform: translateY(15px);
 }
 .content__name {
   font-size: 14px;
@@ -81,26 +103,39 @@
 .content__worked {
   font-size: 12px;
 }
+
 .swiper-button-prev {
-  transform: rotate(180deg);
+  rotate: 180deg;
+  &:hover {
+    transform: translateY(-5px);
+  }
+  &:active {
+    transform: translateY(-15px);
+  }
 }
 #swiper-button-prev,
 #swiper-button-next {
-  top: 95px;
+  top: 65px;
 }
 .swiper-navigation-icon {
   display: none;
 }
 
 .swiper-pagination-bullet {
+  background-color: var(--colorBgPaginationBullet);
+  opacity: 1;
   transition: 100ms padding-inline ease-in-out;
   border-radius: 3px;
   padding-inline: 9px;
   height: 3px;
+  transition: transform 500ms ease-in-out;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--colorBgPagination);
   padding-inline: 15px;
+}
+.swiper-pagination-bullet:hover {
+  transform: translateY(2px);
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,

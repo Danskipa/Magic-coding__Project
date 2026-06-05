@@ -100,7 +100,7 @@
   position: absolute;
   bottom: 8px;
   right: 8px;
-  background-color: var(--colorTextPrimary);
+  background-color: var(--colorBgRPS);
   border: none;
   color: var(--colorBgChoose);
   width: 30px;
