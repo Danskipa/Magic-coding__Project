@@ -1,9 +1,8 @@
 .game-id_10 {
+  padding-bottom: 36px;
   display: flex;
   flex-direction: column;
-  gap: 36px;
   align-items: center;
-  padding-bottom: 36px;
 }
 .game-id_10::before {
   content: '';
@@ -11,6 +10,7 @@
   width: 536px;
   height: 1px;
   background-color: var(--colorTextPrimary);
+  margin-bottom: 36px;
 }
 .scientists-title {
   font-size: 16px;
@@ -28,10 +28,11 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  max-width: 580px;
 }
 
 .scientists-card-item {
-  flex-basis: calc((100% - 36px) / 6);
+  /* flex-basis: calc((100% - 36px) / 6); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,19 +52,23 @@
 
 .scientists-tasks {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px 36px;
   justify-content: center;
   align-items: center;
+  max-width: 800px;
 }
 
 .scientists-item {
-  flex-basis: calc((100% - 36px) / 3);
+  /* flex-basis: calc((100% - 36px) / 2); */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.scientists-item--longshor {
+  max-width: 368px;
 }
 
 .scientists-btn {
@@ -74,11 +79,12 @@
   border-radius: 20px;
   font-size: 12px;
   cursor: pointer;
-  text-align: center;
+  text-align: start;
   box-shadow: 3px 3px 0px 0px #00000025;
   transition-property: box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease;
+  width: 100%;
 }
 .scientists-btn:hover {
   box-shadow: 5px 5px 2px 0px #00000070;
