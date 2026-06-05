@@ -1,12 +1,13 @@
 // import { initTestGame } from '../games/test_game.js';
+import { initLeapYearGame } from '../games/leap_year.js';
 import { initGuessNumberGame } from '../games/guess-number.js';
 import { initRockPaperScissors } from '../games/rock-paper-scissors.js';
 import { initCalculatorGame } from '../games/calculator.js';
 import { initTimeCalculatorGame } from '../games/time_calculator.js';
 import { initDinosaurGame } from '../games/dinosaur-game.js';
-import { initLeapYearGame } from '../games/leap_year.js';
 import { initFootball } from '../games/football.js';
 import { initBiggestNummber } from '../games/biggest_num.js';
+import { initOurTeam } from '../games/our_team.js';
 import { initScientistsGame } from '../games/scientists.js';
 import { initColorGame } from '../games/guess-color.js';
 
@@ -60,6 +61,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: initOurTeam,
     id: 9,
     name: 'Наша команда',
     category: 'acquaintance',

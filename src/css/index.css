@@ -3,6 +3,7 @@
 @import './global/_reset.css';
 @import './global/_global.css';
 @import './components/_container.css';
+@import 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css';
 
 @import './components/_header.css';
 @import './components/_main.css';
@@ -16,6 +17,7 @@
 @import './components/_dinosaur-game.css';
 @import './components/_football.css';
 @import './components/_biggest_num.css';
+@import './components/_our_team.css';
 @import './components/_scientists.css';
 @import './components/_guess-color.css';
 @import './components/_footer.css';

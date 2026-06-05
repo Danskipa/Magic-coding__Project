@@ -83,8 +83,9 @@
 }
 
 .rps-button {
+  color: var(--colorTextSecondary);
   background-color: var(--colorBgRPS);
-  border: 0px solid black;
+  border: 0px solid var(--colorBgRPS);
   border-radius: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
