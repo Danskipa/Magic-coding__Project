@@ -86,6 +86,13 @@
   padding-right: 10px;
   border-radius: 20px;
   border: 0px solid black;
+  transition: transform ease-in-out 350ms;
+  &:hover {
+    transform: translateY(2px);
+  }
+  &:active {
+    transform: translateY(7px);
+  }
 }
 
 .footer-text {

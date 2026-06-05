@@ -61,8 +61,8 @@ export const initOurTeam = () => {
     </div>
   </div>
 
-  <div class="swiper-button-prev swiper-button" id="swiper-button-prev"></div>
-  <div class="swiper-button-next swiper-button" id="swiper-button-next"></div>
+  <div class="swiper-button-prev swiper-button" id="swiper-button-prev" data-swiper="left"></div>
+  <div class="swiper-button-next swiper-button" id="swiper-button-next" data-swiper="right"></div>
   <div class="swiper-pagination"></div>
 </div>
     `;
@@ -101,4 +101,17 @@ export const initOurTeam = () => {
       },
     },
   });
+  const switcher = document.querySelector('.switcher');
+  const swiperButtonLeft = document.querySelector(`[data-swiper="left"]`);
+  const swiperButtonRight = document.querySelector(`[data-swiper="right"]`);
+  const handleSwitcher = event => {
+    if (event.target.checked) {
+      swiperButtonLeft.classList.add('dark');
+      swiperButtonRight.classList.add('dark');
+    } else {
+      swiperButtonLeft.classList.remove('dark');
+      swiperButtonRight.classList.remove('dark');
+    }
+  };
+  switcher.addEventListener('change', handleSwitcher);
 };

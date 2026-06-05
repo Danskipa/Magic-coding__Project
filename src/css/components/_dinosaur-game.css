@@ -90,6 +90,10 @@
   border-radius: 20px;
   background-color: black;
   color: white;
+  transition: transform 500ms ease-in-out;
+}
+.dinosaur__start:active {
+  transform: scale(0.9);
 }
 @keyframes moveBackground {
   from {

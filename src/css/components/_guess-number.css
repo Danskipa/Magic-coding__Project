@@ -32,7 +32,14 @@
 
 .guess-input-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    transform: translateY(5px);
+  }
 }
 .guess-input-wrapper::after {
   content: '';

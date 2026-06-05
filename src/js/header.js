@@ -17,41 +17,48 @@ const mainGames = document.querySelectorAll(`.game`);
 const form = document.querySelector('.modal__form');
 const modalPhotos = document.querySelector('.modal__photo--seconde');
 const modals = document.querySelector('.modals');
+const interactive = document.querySelector('.menu__interactive');
 
 const handleSwitcher = event => {
-  if (event.target.checked) {
-    html.style.setProperty('--colorBgMain', '#111111');
-    html.style.setProperty('--colorCorrect', '#FC66FF');
-    html.style.setProperty('--colorIncorrect', '#66FFFF');
-    html.style.setProperty('--colorBgPrimary', '#1a1a1a');
-    html.style.setProperty('--colorBgSecondary', '#262626');
-    html.style.setProperty('--colorBgField', '#282828');
-    html.style.setProperty('--colorBgSwitch', '#858585');
-    html.style.setProperty('--colorBgChoose', '#0E0E0E');
-    html.style.setProperty('--colorTextPrimary', '#ffffffb9');
-    html.style.setProperty('--colorTextSecondary', '#818181');
-    html.style.setProperty('--colorBgRPS', '#282828');
-    logoW.classList.add('dark_logo');
-    logoD.classList.add('dark_logo');
-    logoWF.classList.add('dark_logo');
-    logoDF.classList.add('dark_logo');
-  } else {
-    html.style.setProperty('--colorBgMain', '#eeeeee');
-    html.style.setProperty('--colorCorrect', '#039900');
-    html.style.setProperty('--colorIncorrect', '#990000');
-    html.style.setProperty('--colorBgPrimary', '#ffffff');
-    html.style.setProperty('--colorBgSecondary', '#d9d9d9');
-    html.style.setProperty('--colorBgField', '#d7d7d7');
-    html.style.setProperty('--colorBgSwitch', '#7a7a7a');
-    html.style.setProperty('--colorBgChoose', '#f1f1f1');
-    html.style.setProperty('--colorTextPrimary', '#000000');
-    html.style.setProperty('--colorTextSecondary', '#7e7e7e');
-
-    logoW.classList.remove('dark_logo');
-    logoD.classList.remove('dark_logo');
-    logoWF.classList.remove('dark_logo');
-    logoDF.classList.remove('dark_logo');
-  }
+  setTimeout(() => {
+    // взяв з Google
+    if (event.target.checked) {
+      html.style.setProperty('--colorBgMain', '#111111');
+      html.style.setProperty('--colorCorrect', '#66FFFF');
+      html.style.setProperty('--colorIncorrect', '#FC66FF');
+      html.style.setProperty('--colorBgPrimary', '#1a1a1a');
+      html.style.setProperty('--colorBgSecondary', '#262626');
+      html.style.setProperty('--colorBgField', '#282828');
+      html.style.setProperty('--colorBgSwitch', '#858585');
+      html.style.setProperty('--colorBgChoose', '#0E0E0E');
+      html.style.setProperty('--colorTextPrimary', '#ffffffb9');
+      html.style.setProperty('--colorTextSecondary', '#818181');
+      html.style.setProperty('--colorBgRPS', '#282828');
+      html.style.setProperty('--colorBgPaginationBullet', '#2d2d2d');
+      logoW.classList.add('dark_logo');
+      logoD.classList.add('dark_logo');
+      logoWF.classList.add('dark_logo');
+      logoDF.classList.add('dark_logo');
+      interactive.classList.add('dark');
+    } else {
+      html.style.setProperty('--colorBgMain', '#eeeeee');
+      html.style.setProperty('--colorCorrect', '#039900');
+      html.style.setProperty('--colorIncorrect', '#990000');
+      html.style.setProperty('--colorBgPrimary', '#ffffff');
+      html.style.setProperty('--colorBgSecondary', '#d9d9d9');
+      html.style.setProperty('--colorBgField', '#d7d7d7');
+      html.style.setProperty('--colorBgSwitch', '#7a7a7a');
+      html.style.setProperty('--colorBgChoose', '#f1f1f1');
+      html.style.setProperty('--colorTextPrimary', '#000000');
+      html.style.setProperty('--colorTextSecondary', '#7e7e7e');
+      html.style.setProperty('--colorBgPaginationBullet', '#d9d9d9');
+      logoW.classList.remove('dark_logo');
+      logoD.classList.remove('dark_logo');
+      logoWF.classList.remove('dark_logo');
+      logoDF.classList.remove('dark_logo');
+      interactive.classList.remove('dark');
+    }
+  }, 250);
 };
 
 const handleHelooing = event => {
