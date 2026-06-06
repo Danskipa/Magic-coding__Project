@@ -82,7 +82,7 @@
   height: 1px;
   background-image: repeating-linear-gradient(
     to right,
-    black 0 2px,
+    var(--colorTextPrimary) 0 2px,
     transparent 2px 4px
   );
   margin-right: 20px;

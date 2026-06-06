@@ -71,20 +71,21 @@
 }
 
 .rock {
-  background-image: url(../../images/stone.png);
+  background-image: url(../../images/stone.svg);
 }
 
 .scissors {
-  background-image: url(../../images/scissors.png);
+  background-image: url(../../images/scissors.svg);
 }
 
 .paper {
-  background-image: url(../../images/paper.png);
+  background-image: url(../../images/paper.svg);
 }
 
 .rps-button {
+  color: var(--colorTextSecondary);
   background-color: var(--colorBgRPS);
-  border: 0px solid black;
+  border: 0px solid var(--colorBgRPS);
   border-radius: 20px;
   padding-top: 10px;
   padding-bottom: 10px;

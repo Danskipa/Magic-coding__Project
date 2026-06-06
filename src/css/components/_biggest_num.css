@@ -39,3 +39,6 @@
 .num:hover {
   transform: translateY(5px);
 }
+.num:focus {
+  transform: translateY(3px);
+}
