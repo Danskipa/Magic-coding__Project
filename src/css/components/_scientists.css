@@ -60,11 +60,17 @@
 }
 
 .scientists-item {
-  /* flex-basis: calc((100% - 36px) / 2); */
+  flex-basis: calc((100% - 36px) / 2);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.scientists-item--odd {
+  justify-content: flex-end;
+}
+.scientists-item--even {
+  justify-content: flex-start;
 }
 
 .scientists-item--longshor {
@@ -84,8 +90,10 @@
   transition-property: box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease;
-  width: 100%;
 }
 .scientists-btn:hover {
   box-shadow: 5px 5px 2px 0px #00000070;
+}
+.scientists-btn--1 {
+  width: 489px;
 }
